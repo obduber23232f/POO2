@@ -1,0 +1,8 @@
+privado definir correo como caracter
+
+publico metodo cliente(n,s)
+       nombre = n /// en vez de set 1 a 1 sino de una sola vez
+	   /// se puede hacer un costructor con parametros y otro sin parametros para estbalecerlos 
+	   sexo = s
+fin metodo
+

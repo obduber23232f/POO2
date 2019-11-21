@@ -1,0 +1,35 @@
+clase Fecha
+  definir dia como entero
+  definir mes como entero
+  definir año como entero
+  
+  
+  metodo mostrarFecha()
+    mostrar "la fecha es " dia "/" mes "/" año
+  fin metodo
+ 
+ fin clase
+ 
+ clase Vehiculo
+   definir placa como caracter
+   definir fecha_fabricacion como fecha
+   definir fecha_venta como fecha
+   definir cliente como Cliente
+   
+   metodo registro()
+     mostrar "Ingrese la fecha en que se vendio el vehiculo"
+	 leer Fecha.dia
+   fin metodo
+   
+  fin clase
+  
+ algoritmo 
+     definir veh como Vehiculo
+     veh = nuevo Vehiculo
+     leer veh.placa
+ 
+      mostrar "Intro.el dia que se vendio el vehiculo:"
+      leer veh.fecha_venta
+	  
+	  veh.fecha_venta.mostrarFecha() 
+ fin algoritmo

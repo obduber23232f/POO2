@@ -1,0 +1,15 @@
+algoritmo colecciones 
+     definir libros como Coleccion<Libro>
+     definir x como caracter 
+	 definir y como entero
+	 
+	 repetir 
+	      mostrar "Introduzca el nombre: "
+		  leer x
+		  mostrar "introduzca el año 
+		  leer y
+		
+		  libros.agregar(nuevo Libro(x,y))
+	 
+	 hasta que respuesta == "N"
+fin algoritmo

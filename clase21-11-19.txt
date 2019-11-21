@@ -1,0 +1,72 @@
+clase Libro
+     privado definir nombre como caracter
+	 privado definir año como entero 
+	 
+	 
+	 publico metodo determinarPrecio() como real
+	     si año < 2005 entonces
+		     retornar 25
+		sino 
+		     si año <=2010 entonces
+			     retornar 30
+			 sino 
+			    si año <=2015 entonces
+				    retornar 35
+				sino
+				     retornar 45
+				fin si
+	                 fin si
+		fin si
+	fin metodo
+	
+	 publico metodo getNombre()  como caracter
+	      retornar nombre
+	 fin metodo
+	 
+	 publico metodo setNombre(n) 
+	      nombre= n
+	 fin metodo
+	 
+	 publico metodo getAño() como entero
+	       retornar año
+	 fin metodo
+	 
+	  publico metodo setAño(a) 
+	      año = a
+	 fin metodo
+	 
+	 publico metodo Libro() //constructor sin parametros 
+	      nombre = "Sin titulo"
+		  año = 2000
+     fin metodo
+ 
+     publico metodo Libro(n,a) //constructor con parametros
+	     nombre = n
+		 año = a
+	 fin metodo
+fin clase
+
+algoritmo libro
+    definir libro1 como Libro
+	definir libro2 como Libro 
+	definir nombre como caracter 
+	definir año como entero
+	
+    libro1=nuevo Libro// SE EJECUTA EL CONSTRUCTOR POR DEFECTO
+	
+	mostrar INTRODUZCA EL NOMBRE DEL LIBRO
+	LEER X
+	MOSTRAR INTRODUZCA EL AÑO DEL LIBRO
+	LEER Y
+	
+	LIBRO1.SETNOMBRE(X)
+	LIBRO2.SETAÑO(Y)
+	
+	MOSTRAR EL PRECIO DEL LIBRO ES LIBRO1.GETNOMBRE()
+	ES LIBRO1.DETERMINARPRECIO()
+	
+	LIBRO2 = NUEVLO LIBRO(X,Y)
+	MOSTRAR EL PRECIO DEL LIBRO " LIBRO2.GETNOMBRE()
+	ES LIBRO2.DETERMINARPRECIO
+	
+fin algoritmo
