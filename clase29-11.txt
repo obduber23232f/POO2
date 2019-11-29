@@ -1,0 +1,27 @@
+clase Auto
+    privado definir placa como caracter
+	protegido definir modelo como caracter //Clase de protegido
+	publico definir color como caracter
+	protegido definir moto como Motor
+	
+	
+	publico metodo Auto()//Constructor
+	     placa = "XXXooo"
+		 color = "Blanco"
+		 modelo = "Generico"
+		 motor = nuevo Motor()
+	fin metodo
+	
+	publico metodo getMotor() como Motor
+	       retornar motor
+	fin metodo
+	
+	publico metodo getPlaca()
+	      retornar placa
+    fin metodo
+	
+	publico metodo setPlaca(nueva)
+	      placa = nueva
+	fin metodo
+fin clase
+

@@ -1,0 +1,30 @@
+incluir clase29-11
+
+algoritmo clase5
+
+    definir placa como caracter
+    definir a como Auto
+	definir b como AutoBus
+	
+	b = nuevo AutoBus()
+	a = nuevo Auto()
+	
+	mostrar "Introduzca la placa:
+	leer placa
+	
+	mostrar "Introduzca el tipo de combustible"//forma 1 
+	leer comb
+	a.getMotor().setCombustible(comb)
+	
+	a.getMotor().setCombustible("gasoil")//Forma 2
+	
+	a.setPlaca(placa)
+	a.color = "amarillo" //Forma 1
+	
+	mostrar "introduzca el color del carro"//Forma 2
+	leer a.color
+	a.getcolor.setcolor(color)
+	
+	b.setPlaca(placa)//Se traen los atributos heredados 
+	b.setPlaca(xyz-467) //forma 2 con parametros
+fin algoritmo
